@@ -5,7 +5,7 @@ Features of the starter:
 - Automatic single header generation using Quom (https://github.com/Viatorus/quom)
 - Automatic build testing with GCC and Clang
 - Unit testing with Catch2 (https://github.com/catchorg/Catch2)
-- Enforces correct `clang-format` usage and single header generation
+- Enforcing correct `clang-format` usage and single header generation
 
 This starter is geared towards a Linux environment.
 
@@ -15,11 +15,19 @@ Once you've picked a name for your project, do the following:
 2. Update `LIBRARY_SHORT_NAME` in `script/generate-header.sh`
 3. Update README
 4. Pick a LICENSE, no need to keep the one included in the starter
-5. Write your library!
+5. Optional: set up branch protection rules
+6. Write your library!
 
 Single header generation requires that there is a single 'main' header file, which includes the rest of your source files. This main header as well as its directory should match `LIBRARY_SHORT_NAME` from step 2, so Quom knows which file to look for. For example, if `LIBRARY_SHORT_NAME` is `mylib` then the main header will be `include/mylib/mylib.hpp`
 
 It is recommended that you add `script/hook.sh` to your git pre-commit hooks. This automatically formats and updates the single header when committing new changes.
+
+It is also recommended to protect your `master` branch, using GitHub's branch protection rules. To do this, go to your repository -> Settings -> Branches -> Branch protection rules -> Add rule and set up a rule as follows:
+
+- Branch name pattern: `master`
+- Require status checks to pass before merging:
+  - Require branches to be up to date before merging: ON
+  - Enable all status checks (`build ...` and `verify`)
 
 # Contributing
 When submitting contributions, make sure:
