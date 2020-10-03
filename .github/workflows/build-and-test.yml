@@ -1,0 +1,22 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        compiler: [g++, clang++]
+        target: [Release, Debug]
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install Catch2
+      run: ./ci/install-catch2.sh
+    
+    - name: Build + test
+      shell: bash
+      run: ./script/build.sh ${{ matrix.compiler }} ${{ matrix.target }}
