@@ -13,8 +13,9 @@ This starter is geared towards a Linux environment.
 Once you've picked a name for your project, change the following:
 1. Name of your CMake project in `./CMakeLists.txt`
 2. `LIBRARY_SHORT_NAME` in `script/generate-header.sh`
-3. Update README and LICENSE
-4. Write your library!
+3. Update README
+4. Pick a LICENSE, no need to keep the one included in the starter
+5. Write your library!
 
 Single header generation requires that there is a single 'main' header file, which includes the rest of your source files. This main header as well as its directory should match `LIBRARY_SHORT_NAME` from step 2, so Quom knows which file to look for. For example, if `LIBRARY_SHORT_NAME` is `mylib` then the main header will be `include/mylib/mylib.hpp`
 
