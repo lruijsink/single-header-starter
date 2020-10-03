@@ -6,11 +6,11 @@ Based on my project 'alex': https://github.com/lruijsink/alex
 # Setup
 Once you've picked a name for your project, change the following:
 1. Name of your CMake project in `./CMakeLists.txt`
-2. `LIBRARY_NAME` in `script/generate-header.sh`
+2. `LIBRARY_SHORT_NAME` in `script/generate-header.sh`
 3. Update this README
 4. Write your library!
 
-You can write your library as separate header files, Quom will combine them for you. This requires that there is a single 'main' header file which includes the rest of your library's source files. The main header file as well as its directory should match `LIBRARY_NAME` from step 2, so Quom knows which file to look for. In the example `LIBRARY_NAME` is `mylib` and the main header file is located at `include/mylib/mylib.hpp`
+Single header include generation requires that there is a single 'main' header file, which includes the rest of your source files. This main header as well as its directory should match `LIBRARY_SHORT_NAME` from step 2, so Quom knows which file to look for. In the example `LIBRARY_SHORT_NAME` is `mylib` and the main header file is located at `include/mylib/mylib.hpp`
 
 Optionally, but reccommended, you can add `script/hook.sh` to your git pre-commit hooks, to automatically format and update the single header include when committing new changes.
 
