@@ -10,9 +10,9 @@ Features of the starter:
 This starter is geared towards a Linux environment.
 
 # Setup
-Once you've picked a name for your project, change the following:
-1. Name of your CMake project in `./CMakeLists.txt`
-2. `LIBRARY_SHORT_NAME` in `script/generate-header.sh`
+Once you've picked a name for your project, do the following:
+1. Name your CMake project in `./CMakeLists.txt`
+2. Update `LIBRARY_SHORT_NAME` in `script/generate-header.sh`
 3. Update README
 4. Pick a LICENSE, no need to keep the one included in the starter
 5. Write your library!
