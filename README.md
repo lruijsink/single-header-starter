@@ -37,8 +37,6 @@ When submitting contributions, make sure:
 
 This process can be automated by adding `script/hook.sh` to your pre-commit hooks. This script will run Quom to generate the single header and run `clang-format` on all staged changes.
 
-# Dependencies
-
 # Build + test locally
 To build the project the following dependencies are required:
 - CMake v3.1.0
