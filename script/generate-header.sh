@@ -1,4 +1,4 @@
-LIBRARY_NAME=mylib
+LIBRARY_SHORT_NAME=mylib
 
 SCRIPT_DIR=$(dirname "$0")
 ROOT_DIR=$SCRIPT_DIR/..
