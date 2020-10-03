@@ -10,7 +10,9 @@ Once you've picked a name for your project, change the following:
 - Update this README
 - Write your library!
 
-You can write your library as separate header files, Quom will combine them for you. This requires that there is a single 'main' header file which includes all other ones. In the example's case this file is located at `include/mylib/mylib.hpp`
+You can write your library as separate header files, Quom will combine them for you. This requires that there is a single 'main' header file which includes the rest of your library's source files. The main header file as well as its directory should match your library name. In the example this is `include/mylib/mylib.hpp`
+
+Optionally, but reccommended, you can add `script/hook.sh` to your git pre-commit hooks, to automatically format and update the single header include when committing new changes.
 
 # Contributing
 When submitting contributions, make sure:
