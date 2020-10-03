@@ -2,10 +2,11 @@
 Single header C++ libraries are among the easiest way to share your work, requiring no installation or dependencies on the part of your users. This starter aims to make it simple to set up a single header library project of your own and to provide the most important workflow tools.
 
 Features of the starter:
-- Automatic single header generation using Quom (https://github.com/Viatorus/quom)
-- Automatic build testing with GCC and Clang
+- Single header generation using Quom (https://github.com/Viatorus/quom)
+- Build testing with GCC and Clang
 - Unit testing with Catch2 (https://github.com/catchorg/Catch2)
 - Enforcing correct `clang-format` usage and single header generation
+- GitHub Actions to automate all of the above and protect your `master` branch
 
 This starter is geared towards a Linux environment.
 
