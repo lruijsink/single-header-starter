@@ -1,5 +1,7 @@
 # Single header library starter
-This is a project starter for creating your own single header library. It uses CMake as a build tool, Catch2 for unit testing, Quom for automatic single header generation, clang-format for code formatting, and provides a basic Github workflow to automate testing and verification of your library.
+This is a project starter for creating your own single C++ header library. It uses CMake as a build tool, Catch2 for unit testing, Quom for automatic single header generation, clang-format for code formatting, and provides a basic Github workflow to automate testing and verification of your library.
+
+Based on my project 'alex': https://github.com/lruijsink/alex
 
 # Setup
 Once you've picked a name for your project, change the following:
@@ -7,6 +9,8 @@ Once you've picked a name for your project, change the following:
 - `LIBRARY_NAME` in `script/generate-header.sh`
 - Update this README
 - Write your library!
+
+You can write your library as separate header files, Quom will combine them for you. This requires that there is a single 'main' header file which includes all other ones. In the example's case this file is located at `include/mylib/mylib.hpp`
 
 # Contributing
 When submitting contributions, make sure:
