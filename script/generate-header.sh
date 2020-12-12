@@ -1,3 +1,5 @@
+#!/bin/bash
+
 LIBRARY_SHORT_NAME=mylib
 
 SCRIPT_DIR=$(dirname "$0")

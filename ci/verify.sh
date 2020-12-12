@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CI_DIR=$(dirname "$0")
 ROOT_DIR=$CI_DIR/..
 SCRIPT_DIR=$ROOT_DIR/script
