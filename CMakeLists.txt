@@ -8,5 +8,5 @@ include(CTest)
 include(Catch)
 
 include_directories(include)
-include_directories(/usr/local/include)
+include_directories(lib)
 add_subdirectory(test)
