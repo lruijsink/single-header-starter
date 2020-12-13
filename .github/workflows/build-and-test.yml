@@ -19,4 +19,4 @@ jobs:
     
     - name: Build + test
       shell: bash
-      run: ./script/build.sh ${{ matrix.compiler }} ${{ matrix.target }}
+      run: sudo ./script/build.sh ${{ matrix.compiler }} ${{ matrix.target }}
